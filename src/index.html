@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Urban Dwelling</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header">
+                <div class="sub-menu sub-menu_hidden">
+                    <div class="container">
+                        <ul class="sub-menu__list">
+                            <li class="sub-menu__item">
+                                <a href="#">Доставка и оплата</a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#">Гарантия и возврат</a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#">EN</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="menu">
+                        <a class="menu__logo" href="#">
+                            <img src="icons/logo.svg" width="217" height="57" alt="Логотип">
+                        </a>
+                        <div class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__list-item">
+                                    <a href="#">Каталог</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a href="#">Контакты</a>
+                                </li>
+                                <li class="nav__list-item nav__list-item_hidden">
+                                    <a href="#">Доставка и оплата</a>
+                                </li>
+                                <li class="nav__list-item nav__list-item_hidden">
+                                    <a href="#">Гарантия и возврат</a>
+                                </li>
+                                <li class="nav__list-item nav__list-item_hidden">
+                                    <a href="#">EN</a>
+                                </li>
+                            </ul>
+                            <div class="nav__elements">
+                                <div class="nav__search">
+                                    <form method="get" action="/search">
+                                        <label for="search-text">
+                                            <input class="nav__input" type="search" name="search-text"
+                                                placeholder="Лампы" id="search-text" />
+                                        </label>
+                                    </form>
+                                    <div class="nav__search-btn"></div>
+                                </div>
+                                <a class="nav__basket" href="#">Корзина</a>
+                            </div>
+                        </div>
+                        <button class="menu__burger" type="button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="catalog">
+                <div class="container">
+                    <h1 class="catalog__title">Результаты поиска</h1>
+                    <ul class="catalog__list">
+                        <li class="catalog__item">
+                            <div class="catalog__img-wrapper">
+                                <img class="catalog__img" src="img/item-1.png" width="320" height="477"
+                                    alt="Круглый светильник чёрно-белого цвета">
+                                <span class="catalog__promotion">Акция</span>
+                                <a class="catalog__details" href="#">Подробнее</a>
+                            </div>
+                            <a class="catalog__product-name" href="#">Встраиваемый светильник Markt</a>
+                            <span class="catalog__price catalog__price_new">3 490 <span>₽</span></span>
+                            <span class="catalog__price catalog__price_old">5 060 <span>₽</span></span>
+                        </li>
+                        <li class="catalog__item">
+                            <div class="catalog__img-wrapper">
+                                <img class="catalog__img" src="img/item-2.png" width="320" height="477"
+                                    alt="Линейный светильник чёрного цвета">
+                                <a class="catalog__details" href="#">Подробнее</a>
+                            </div>
+                            <a class="catalog__product-name" href="#">Линейный светильник ARG</a>
+                            <span class="catalog__price">6 700 <span>₽</span></span>
+                        </li>
+                        <li class="catalog__item">
+                            <div class="catalog__img-wrapper">
+                                <img class="catalog__img" src="img/item-3.png" width="320" height="477"
+                                    alt="Линейный светильник белого цвета">
+                                <span class="catalog__promotion">Акция</span>
+                                <a class="catalog__details" href="#">Подробнее</a>
+                            </div>
+                            <a class="catalog__product-name" href="#">Светодиодный светильник</a>
+                            <span class="catalog__price catalog__price_new">5 060 <span>₽</span></span>
+                            <span class="catalog__price catalog__price_old">6 060 <span>₽</span></span>
+                        </li>
+                        <li class="catalog__item">
+                            <div class="catalog__img-wrapper">
+                                <img class="catalog__img" src="img/item-1.png" width="320" height="477"
+                                    alt="Круглый светильник чёрно-белого цвета">
+                                <a class="catalog__details" href="#">Подробнее</a>
+                            </div>
+                            <a class="catalog__product-name" href="#">Встраиваемый светильник Markt</a>
+                            <span class="catalog__price">3 490 <span>₽</span></span>
+                        </li>
+                        <li class="catalog__item">
+                            <div class="catalog__img-wrapper">
+                                <img class="catalog__img" src="img/item-2.png" width="320" height="477"
+                                    alt="Линейный светильник чёрного цвета">
+                                <span class="catalog__promotion">Акция</span>
+                                <a class="catalog__details" href="#">Подробнее</a>
+                            </div>
+                            <a class="catalog__product-name" href="#">Линейный светильник ARG</a>
+                            <span class="catalog__price catalog__price_new">6 700 <span>₽</span></span>
+                            <span class="catalog__price catalog__price_old">6 060 <span>₽</span></span>
+                        </li>
+                        <li class="catalog__item">
+                            <div class="catalog__img-wrapper">
+                                <img class="catalog__img" src="img/item-3.png" width="320" height="477"
+                                    alt="Светодиодный светильник белого цвета">
+                                <a class="catalog__details" href="#">Подробнее</a>
+                            </div>
+                            <a class="catalog__product-name" href="#">Сведодиодный светильник</a>
+                            <span class="catalog__price">5 060 <span>₽</span></span>
+                        </li>
+                        <li class="catalog__item">
+                            <div class="catalog__img-wrapper">
+                                <img class="catalog__img" src="img/item-1.png" width="320" height="477"
+                                    alt="Встраиваемый светильник чёрно-белого цвета">
+                                <span class="catalog__promotion">Акция</span>
+                                <a class="catalog__details" href="#">Подробнее</a>
+                            </div>
+                            <a class="catalog__product-name" href="#">Встраиваемый светильник Markt</a>
+                            <span class="catalog__price catalog__price_new">3 490 <span>₽</span></span>
+                            <span class="catalog__price catalog__price_old">6 060 <span>₽</span></span>
+                        </li>
+                        <li class="catalog__item">
+                            <div class="catalog__img-wrapper">
+                                <img class="catalog__img" src="img/item-2.png" width="320" height="477"
+                                    alt="Линейный светильник чёрного цвета">
+                                <a class="catalog__details" href="#">Подробнее</a>
+                            </div>
+                            <a class="catalog__product-name" href="#">Линейный светильник ARG</a>
+                            <span class="catalog__price">6 700 <span>₽</span></span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="footer">
+                <div class="container">
+                    <div class="footer__wrapper">
+                        <a class="footer__logo" href="#">
+                            <img width="239" height="62" src="icons/logo-footer.svg" alt="Логотип">
+                        </a>
+                        <span class="footer__captcha">Этот сайт защищен от спама службой reCAPTCHA Google.
+                            <a href="#">Политика
+                                конфиденциальности/Условия предоставления услуг</a>
+                        </span>
+                        <div class="info">
+                            <ul class="info__address">
+                                <li class="info__title">Адрес</li>
+                                <li class="info__link">Текст, Текст, Текст</li>
+                            </ul>
+                            <ul class="info__contacts">
+                                <li class="info__title">Контакты</li>
+                                <li class="info__link">
+                                    <a href="mailto:urban.dwelling@yandex.com">Email: urban.dwelling@yandex.com</a>
+                                </li>
+                                <li class="info__link">
+                                    <a href="tel:+79999999999">Телефон: 8 (999) 999-99-99</a>
+                                </li>
+                            </ul>
+                            <ul class="info__services">
+                                <li class="info__title">Услуги</li>
+                                <li class="info__link">
+                                    <a href="#">Каталог</a>
+                                </li>
+                                <li class="info__link">
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li class="info__link">
+                                    <a href="#">Контакты</a>
+                                </li>
+                                <li class="info__link">
+                                    <a href="#">Доставка и оплата</a>
+                                </li>
+                                <li class="info__link">
+                                    <a href="#">Гарантия и возврат</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__agreements">
+                            <a href="#">Публичная оферта</a>
+                            <a href="#">Политика персональных данных</a>
+                        </div>
+                        <ul class="footer__payment">
+                            <li class="footer__payment-item">
+                                <a href="#">
+                                    <img src="icons/mir.svg" width="46" height="13" alt="Логотип платёжной системы МИР">
+                                </a>
+                            </li>
+                            <li class="footer__payment-item">
+                                <a href="#">
+                                    <img src="icons/visa.svg" width="45" height="14"
+                                        alt="Логотип платёжной системы VISA">
+                                </a>
+                            </li>
+                            <li class="footer__payment-item">
+                                <a href="#">
+                                    <img src="icons/master-card.svg" width="49" height="29"
+                                        alt="Логотип плаёжной системы MasterCard">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <script src="js/burger.js"></script>
+    <script src="js/search.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.sub-menu {
+    background-color: $color-seal-brown;
+
+    &_hidden {
+        @media (max-width: $vw-1599) {
+            display: none;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+        gap: 70px;
+        padding: 10px 0;
+    }
+
+    &__item {
+        font-weight: 400;
+        color: $color-white;
+
+        a {
+            &:hover,
+            &:focus {
+                border-bottom: 2px solid $color-white;
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+.footer {
+    padding: 61px 0 60px;
+    background-color: $color-black;
+
+    @media (min-width: $vw-1600) and (max-width: $vw-1919) {
+        padding: 63px 0 60px;
+    }
+
+    @media (max-width: $vw-1599) {
+            padding: 50px 0 50px;
+    }
+
+    @media (max-width: $vw-767) {
+        padding-top: 40px
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-areas:
+            'logo info agreements'
+            'captcha info payment';
+        grid-template-columns: auto 1fr auto;
+
+        @media (max-width: $vw-1599) {
+            grid-template-areas:
+                                'logo logo logo'
+                                'info info info'
+                                'agreements contacts services'
+                                'payment captcha captcha';
+        }
+
+        @media (max-width: $vw-767) {
+            grid-template-areas:
+                                'logo'
+                                'info'
+                                'agreements'
+                                'payment'
+                                'captcha';
+
+        }
+    }
+
+    &__logo {
+        grid-area: logo;
+        fill: $color-white;
+
+        @media (min-width: $vw-1600) and (max-width: $vw-1919) {
+            width: 217px;
+        }
+
+        @media (max-width: $vw-1599) {
+            width: 180px;
+        }
+
+        @media (max-width: $vw-767) {
+            padding-left: 5px;
+        }
+    }
+
+    &__captcha {
+        display: block;
+        max-width: 322px;
+        width: 100%;
+        grid-area: captcha;
+        font-family: $ff-roboto;
+        color: $color-grey;
+
+        a {
+            text-decoration: underline;
+            transition: .3s;
+
+            &:hover,
+            &:focus {
+                color: $color-white;
+            }
+        }
+
+        @media (min-width: $vw-1600) and (max-width: $vw-1919) {
+            padding-top: 9px;
+        }
+
+        @media (max-width: $vw-1599) {
+            max-width: 382px;
+            margin-right: 0;
+            margin-left: auto;
+            padding-top: 16px;
+        }
+
+
+        @media (max-width: $vw-767) {
+            margin-left: 0;
+            max-width: 350px;
+            padding-top: 32px;
+        }
+    }
+
+    &__agreements {
+        grid-area: agreements;
+        color: $color-grey;
+        text-align: right;
+
+        a {
+            display: block;
+            margin-bottom: 20px;
+            transition: .3s;
+
+            &:hover,
+            &:focus {
+                color: $color-white;
+            }
+        }
+
+        @media (max-width: $vw-1599) {
+            margin-top: -130px;
+            text-align: left;
+        }
+
+        @media (max-width: $vw-767) {
+            margin-top: 12px;
+        }
+    }
+
+    &__payment {
+        grid-area: payment;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 34px;
+
+        @media (max-width: $vw-1599) {
+            justify-content: flex-start;
+            padding-left: 10px;
+            gap: 32px;
+        }
+
+        @media (max-width: $vw-767) {
+            margin-top: 36px;
+        }
+    }
+
+    &__payment-item {
+        margin-bottom: 17px;
+
+        a {
+            &:hover,
+            &:focus {
+                cursor: default;
+            }
+        }
+
+        @media (max-width: $vw-1599) {
+             margin-bottom: 0;
+             padding-top: 21px;
+        }
+    }
+}
